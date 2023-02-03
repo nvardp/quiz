@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: Eraser;
+    src: url(../fonts/Eraser.ttf);
+  }
+
+  body{
+    font-family: 'Eraser', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+
+.container
+{
+    height: 45rem;
+    width: 27rem;
+    margin: 2% auto;
+
+    background-image: url(../img/bg-black.jpg);
+    background-size: cover;
+    color: rgb(240, 240, 240);
+
+    overflow: hidden;
+}
+
+.flex-col
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question-container
+{
+    align-self: center;
+
+}
+
+.top-btns, .bottom-btns
+{
+    display: flex;
+    justify-content: space-between!important;
+
+}
+.top-btns
+{
+position: relative;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+.title
+{
+    font-size: 1.5rem;
+    padding: 0 .2rem;
+
+}
+.cur-level
+{
+    font-size: 3rem;
+
+}
+.round
+{
+    height: 200px; 
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    color: inherit;
+    background-color: inherit;
+    border: 5px solid rgb(240, 240, 240);
+}
+ .link:link, .link:visited
+ {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+ }
+
+ .options {
+    height: 15rem;
+    width: 15rem;
+    border: 5px solid  rgb(240, 240, 240);
+    border-radius: 50%;
+    background: inherit;
+
+    color: inherit;
+    font-size: 4rem;
+    cursor: pointer;
+}
+#option-1
+{
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#option-2
+{
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+#option-3
+{
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+#option-4
+{
+    transform: translate(50%, 50%);
+}
+
+#option1, #option2, #option3, #option0
+{
+    padding: 1.8rem;
+
+} 
+.info
+{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+.info .level
+{
+    font-size: 1.1rem;
+}
+.info .timer
+{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.end_of_game{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    
+    <div class="container main ">
+        
+        <div class="top-btns">
+            <div class="info">
+                <div class="level">lvl <span id="current_level"> 1 </span></div>
+                <div class="timer" id="time">00:30</div>
+            </div>
+            <div class=" options" id="option-1">
+                <div id="option0"> a</div>
+            </div>
+            <div class=" options" id="option-2">
+                <span id="option1"> b</span>
+            </div>
+        </div>
+        
+        <div class="round flex-center question-container">
+            <label id="question">Q+1</label>
+        </div>
+
+        <div class="bottom-btns">
+            <div class=" options" id="option-3">
+                <div id="option2"> a</div>
+            </div>
+            <div class=" options" id="option-4">
+                <div id="option3"> b</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
